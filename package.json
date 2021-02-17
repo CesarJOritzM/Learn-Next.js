@@ -1,0 +1,31 @@
+{
+  "name": "learn-next.js-whit-ts",
+  "version": "1.0.0",
+  "description": "Learn Next.js Whit TS ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarJOritzM/Learn-Next.js-whit-TS.git"
+  },
+  "keywords": [
+    "Next.js",
+    "TypeScript",
+    "React"
+  ],
+  "author": "Cesare Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarJOritzM/Learn-Next.js-whit-TS/issues"
+  },
+  "homepage": "https://github.com/CesarJOritzM/Learn-Next.js-whit-TS#readme",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
