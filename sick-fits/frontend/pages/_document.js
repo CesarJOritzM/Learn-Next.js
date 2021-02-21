@@ -1,10 +1,21 @@
-import Document, { Html, NextScript, Main } from 'next/document';
+import Document, { Html, Head, NextScript, Main } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
+  static getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet();
+    const page = renderPage((App) => (Props) =>
+      sheet.collectStyles(<App {...Props} />)
+    );
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
+  }
+
   render() {
     return (
-      <Html lang="en-CA">
-        {/* <Head></Head> */}
+      // eslint-disable-next-line prettier/prettier
+      <Html lang='en-CA'>
+        <Head />
         <body>
           <Main />
           <NextScript />
